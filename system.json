@@ -1,0 +1,33 @@
+{
+  "id": "blackcrusade",
+  "title": "Black Crusade",
+  "description": "A comprehensive Warhammer 40k: Black Crusade game system for Foundry VTT featuring d100 mechanics, character sheets, items, psychic powers and full game rules.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "10.291",
+    "verified": "11.315",
+    "maximum": "12"
+  },
+  "url": "https://github.com/shamil300411-lab/foundry-black-crusade",
+  "author": "shamil300411-lab",
+  "license": "MIT",
+  "initiative": "1d100",
+  "primaryTokenAttribute": "derivedCharacteristics.wounds",
+  "documentTypes": {
+    "Actor": {
+      "base": "Actor",
+      "types": ["character", "npc"]
+    },
+    "Item": {
+      "base": "Item",
+      "types": ["weapon", "skill", "talent", "psychicpower", "armor", "equipment"]
+    }
+  },
+  "esmodules": [
+    "module/black-crusade.js",
+    "module/actor.js",
+    "module/item.js",
+    "module/rolls.js"
+  ],
+  "templateData": "template.json"
+}
