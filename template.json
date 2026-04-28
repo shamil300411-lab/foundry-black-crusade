@@ -1,0 +1,135 @@
+{
+  "Actor": {
+    "types": ["character", "npc"],
+    "templates": {
+      "common": {
+        "biography": "",
+        "attributes": {
+          "weaponSkill": {
+            "value": 30,
+            "label": "Weapon Skill"
+          },
+          "ballisticSkill": {
+            "value": 30,
+            "label": "Ballistic Skill"
+          },
+          "strength": {
+            "value": 30,
+            "label": "Strength"
+          },
+          "toughness": {
+            "value": 30,
+            "label": "Toughness"
+          },
+          "agility": {
+            "value": 30,
+            "label": "Agility"
+          },
+          "intelligence": {
+            "value": 30,
+            "label": "Intelligence"
+          },
+          "perception": {
+            "value": 30,
+            "label": "Perception"
+          },
+          "willpower": {
+            "value": 30,
+            "label": "Willpower"
+          }
+        },
+        "derivedCharacteristics": {
+          "wounds": {
+            "value": 10,
+            "max": 10,
+            "label": "Wounds"
+          },
+          "corruption": {
+            "value": 0,
+            "max": 100,
+            "label": "Corruption"
+          },
+          "insanity": {
+            "value": 0,
+            "max": 100,
+            "label": "Insanity"
+          },
+          "fatigue": {
+            "value": 0,
+            "max": 10,
+            "label": "Fatigue"
+          }
+        }
+      }
+    },
+    "character": {
+      "templates": ["common"],
+      "details": {
+        "rank": "Initiate",
+        "faction": "",
+        "homeworld": ""
+      }
+    },
+    "npc": {
+      "templates": ["common"],
+      "details": {
+        "type": "Enemy",
+        "threat": "Low"
+      }
+    }
+  },
+  "Item": {
+    "types": ["weapon", "skill", "talent", "psychicpower", "armor", "equipment"],
+    "templates": {
+      "common": {
+        "description": "",
+        "quantity": 1,
+        "weight": 0
+      }
+    },
+    "weapon": {
+      "templates": ["common"],
+      "damage": "1d10",
+      "damageType": "Normal",
+      "range": "Melee",
+      "rateOfFire": 1,
+      "reliability": "Reliable",
+      "special": []
+    },
+    "skill": {
+      "templates": ["common"],
+      "skillType": "Basic",
+      "attribute": "intelligence",
+      "rank": 0
+    },
+    "talent": {
+      "templates": ["common"],
+      "talentType": "General",
+      "prerequisites": [],
+      "effect": ""
+    },
+    "psychicpower": {
+      "templates": ["common"],
+      "powerLevel": 1,
+      "range": "Touch",
+      "duration": "Instantaneous",
+      "effect": ""
+    },
+    "armor": {
+      "templates": ["common"],
+      "armorType": "Light",
+      "armorPoints": {
+        "head": 0,
+        "body": 2,
+        "leftArm": 2,
+        "rightArm": 2,
+        "leftLeg": 1,
+        "rightLeg": 1
+      }
+    },
+    "equipment": {
+      "templates": ["common"],
+      "equipmentType": "Misc"
+    }
+  }
+}
